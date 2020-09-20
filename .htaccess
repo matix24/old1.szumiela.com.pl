@@ -1,0 +1,18 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule zatrudnij-programiste-sieradz index.html
+RewriteRule kim-jestem kimjestem.html
+RewriteRule oferta-tworzenie-programy-sieradz oferta.html
+RewriteRule cv-programista-c-java-php-sieradz cv.html
+RewriteRule kontakt-programista-php-java-sieradz kontakt.html
+
+ErrorDocument 400 http://szumiela.com.pl/400.html
+ErrorDocument 401 http://szumiela.com.pl/401.html
+ErrorDocument 403 http://szumiela.com.pl/403.html
+ErrorDocument 404 http://szumiela.com.pl/404.html
+ErrorDocument 500 http://szumiela.com.pl/500.html
